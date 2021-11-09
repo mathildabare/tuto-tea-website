@@ -389,3 +389,23 @@ cite img {
     background-color: seagreen;
     color: white;
 }
+
+
+/* 
+ * FOOTER
+ * ******************* */
+
+footer {
+    background-color: rgb(41, 41, 41);
+    color: white;
+    height: 10vh;
+    padding: 20px 20px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright a {
+    color: white;
+}
