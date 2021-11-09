@@ -289,6 +289,7 @@ cite img {
 .pack-title {
     padding: 10px 10px 0 10px;
     border-bottom: 1px solid #c5c5c5;
+    position: relative;
 }
 
 .pack-content ul {
@@ -303,20 +304,67 @@ cite img {
     margin-right: 10px;
 }
 
-.pack-signup {
-    text-align: center;
-}
-
-.pack-btn {
-background-color: seagreen;
-color: white;
-    margin-bottom: 20px;
-}
-
-.pack span{
+.pack span {
     font-weight: 200;
     font-size: 40%;
     position: relative;
     top: -15px;
     left: 5px;
+}
+
+
+.pack-signup {
+    text-align: center;
+}
+
+.pack-btn {
+    background-color: seagreen;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.pack-btn:hover {
+    background-color: rgb(81, 170, 85);
+    color: white;
+}
+
+
+/** Pack Premium **/
+
+.pack-premium {
+    background-color: rgb(56, 121, 56);
+    color: white;
+}
+
+.pack-premium h3 {
+    color: white;
+}
+
+
+.pack-premium .pack-btn {
+    background-color: rgb(230, 230, 230);
+    color: rgb(36, 121, 73);
+    transition: color 1s, background-color 1s;
+}
+
+.pack-premium .pack-btn:hover {
+    color: rgb(4, 90, 18);
+    background-color: white;
+}
+
+.pack-title-premium i {
+    margin-right: 10px;
+}
+
+.pack-title-premium {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    background-color: white;
+    border-radius: 20px;
+    color: rgb(33, 104, 64);
+    padding: 5px 10px;
+    font-size: 90%;
+    text-align: center;
+    font-weight: 400;
 }
