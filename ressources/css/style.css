@@ -1,0 +1,322 @@
+/* 
+ * GLOBAL
+ * ******************* */
+
+html {
+    background-color: white;
+}
+
+/** typos **/
+
+h1,
+h2,
+h3,
+h4 {
+
+    font-family: 'Lato', 'Arial', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: -1px;
+    word-spacing: 8px;
+}
+
+h1 {
+    color: white;
+
+}
+
+h2 {
+    color: black;
+    font-size: 250%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: green;
+    width: 100px;
+    content: "  ";
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 160%;
+}
+
+p {
+    font-size: 10pt;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+section {
+    padding: 30px 0 60px 0;
+}
+
+
+
+/* 
+ * HEADER
+ * ******************* */
+
+header {
+
+    background-image:
+        linear-gradient(to right, rgba(0, 242, 106, 0.4), rgba(7, 117, 230, 0.6)),
+        url(../imgs/head/header.jpg);
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+
+}
+
+/** titles **/
+
+.homeTitle {
+    position: absolute;
+    top: 20%;
+}
+
+.homeTitle h1 {
+    font-size: 340%;
+
+}
+
+.homeTitle h1 span {
+
+    font-weight: 400;
+    letter-spacing: -6px;
+}
+
+.homeTitle p {
+
+    color: white;
+}
+
+
+/** buttons **/
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    transition: background-color 1s, color 1s, border 1s;
+}
+
+.btn-full {
+    background-color: paleturquoise;
+    color: seagreen;
+}
+
+.btn-ghost {
+    color: white;
+    border: 1px solid white;
+}
+
+.btn-full:hover {
+    background-color: seagreen;
+    color: paleturquoise;
+}
+
+.btn-ghost:hover {
+    background-color: seagreen;
+    border: 1px solid seagreen;
+    color: paleturquoise;
+}
+
+
+
+/* 
+ * PRODUITS
+ * ******************* */
+
+
+.produits-plus {
+    margin: 20px 0;
+}
+
+.produits-plus:hover .produits-icon {
+    transform: translateX(20px);
+    color: rgb(80, 100, 80);
+}
+
+.produits-img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+.produits-icon {
+    font-size: 17pt;
+    color: rgb(45, 120, 75);
+    transition: all 0.5s;
+}
+
+
+/* 
+ * FAMILLE
+ * ******************* */
+
+.famille-the {
+    background-color: rgb(215, 247, 231);
+}
+
+.famille-details {
+    background-color: rgb(236, 255, 249);
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.famille-details img {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.famille-details h4 {
+    text-align: center;
+}
+
+
+/* 
+ * GALERIE PHOTOS
+ * ******************* */
+
+
+.galeries-img {
+    display: block;
+    position: relative;
+    background-size: cover;
+    background-position: top center;
+    height: 300px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+
+}
+
+
+.galerie-title {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.galerie-title h4 {
+    color: white;
+    font-weight: 300;
+}
+
+/* 
+ * AVIS CLIENTS
+ * ******************* */
+
+.clients {
+    background-image: linear-gradient(rgba(0, 184, 25, 0.5), rgba(2, 122, 186, 0.7)),
+        url(../imgs/clients/the-paysage.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.clients h2 {
+    color: white;
+
+}
+
+
+.clients h2::after {
+    background-color: white;
+}
+
+
+blockquote {
+    color: white;
+    padding: 5px;
+    font-style: italic;
+    line-height: 130%;
+    font-family: "playfair-display", serif;
+    font-weight: 500;
+    position: relative
+}
+
+blockquote::before {
+    content: "\201C";
+    font-size: 700%;
+    position: absolute;
+    left: -30px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+cite {
+    font-size: 90%;
+    display: block;
+    margin-top: 20px;
+}
+
+cite img {
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+/* 
+ * PACKS
+ * ******************* */
+
+.pack {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.pack h3 {
+    font-weight: 400;
+    color: green
+}
+
+.pack h4 {
+    font-weight: 100;
+    font-size: 250%;
+}
+
+.pack-title {
+    padding: 10px 10px 0 10px;
+    border-bottom: 1px solid #c5c5c5;
+}
+
+.pack-content ul {
+    list-style: none;
+    padding: 20px;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+.pack-content ul li i {
+    font-size: 90%;
+    margin-right: 10px;
+}
+
+.pack-signup {
+    text-align: center;
+}
+
+.pack-btn {
+background-color: seagreen;
+color: white;
+    margin-bottom: 20px;
+}
+
+.pack span{
+    font-weight: 200;
+    font-size: 40%;
+    position: relative;
+    top: -15px;
+    left: 5px;
+}
