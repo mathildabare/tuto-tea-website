@@ -24,29 +24,35 @@
 <body>
     <header>
 
-    <!------- ======= Menu ======-------->
+        <!------- ======= Menu ======-------->
 
-<nav class="navbar navbar-light navbar-expand-md bg-light">
-<a class="navbar-brand" href="/">Boutique de Thés</a>
-<div class="navbar-nav">
-<a class="nav-item nav-link" href="/">Qui sommes-nous</a>
-<a class="nav-item nav-link" href="/">Nos Produits</a>
-<a class="nav-item nav-link" href="/">Photos</a>
-<a class="nav-item nav-link" href="/">Avis</a>
-<a class="nav-item nav-link" href="/">Packs</a>
+        <nav class="navbar navbar-light navbar-expand-md fixed-top bg-light">
+            <div class="container">
+
+                <a class="navbar-brand" href="/">Boutique de Thés</a>
 
 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#monMenu"
+                    aria-controls="monMenu" aria-label="MobileMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="monMenu">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-item nav-link" href="/">Qui sommes-nous</a>
+                        <a class="nav-item nav-link" href="/#produits">Nos Produits</a>
+                        <a class="nav-item nav-link" href="/#photos">Photos</a>
+                        <a class="nav-item nav-link" href="/#packs">Nos Packs</a>
+                        <a class="nav-item nav-link" href="/#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
 
 
-</div>
-
-
-</nav>
-
-
-
-<!------- ======= Header ======-------->
+        <!------- ======= Header ======-------->
 
         <div class="container">
             <div class="row">
@@ -62,7 +68,7 @@
 
 
     <!------- ======= Nos produits ======-------->
-    <section>
+    <section class="nos-produits" id="produits">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -174,7 +180,7 @@
 
 
     <!------- ======= GALERIE PHOTOS ======-------->
-    <section>
+    <section class="galerie" id="photos">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -276,7 +282,7 @@
 
 
     <!------- ======= PACKS ======-------->
-    <section>
+    <section class="nos-packs" id="packs">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -360,7 +366,7 @@
     </section>
 
     <!------- ======= CONTACT ======-------->
-    <section>
+    <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -462,18 +468,19 @@
             </div>
         </div>
     </section>
-    
+
     <!------- ======= FOOTER ======-------->
-<footer>
-<div class="copyright">
-    <p>Site de thé - 2021. <a href="/">Mentions Légales</a></p>
-</div>
-</footer>
+    <footer>
+        <div class="copyright">
+            <p>Site de thé - 2021. <a href="/">Mentions Légales</a></p>
+        </div>
+    </footer>
 
     <!------- ======= SCRIPTS ======-------->
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 
 </body>
 
